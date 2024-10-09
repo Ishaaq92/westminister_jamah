@@ -31,4 +31,4 @@ def show_prayer_times():
 	return render_template('prayer_times.html', jamaa_times=jamaa_times)
 
 if (__name__ == '__main__'):
-	app.run(debug=True)
+	app.run()
