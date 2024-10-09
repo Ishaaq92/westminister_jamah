@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <title>Westminister Jamah</title>
+    <h1>Westminister Jamah</h1>
+    <head> Congregrational Prayer Times</head>
+
+    <body>
+        <h3>Today's Prayer Times</h3>
+    
+        {% if jamaa_times %}
+        <table>
+            <tr>
+                <th>Prayer</th>
+                <th>Jamah</th>
+            </tr>
+            <tr>
+                <td>Fajr</td>
+                <td>{{ jamaa_times[1] }}</td>
+            </tr> 
+
+            <tr>
+                <td>Zuhr</td>
+                <td>{{ jamaa_times[2] }}</td>
+            </tr>
+
+            <tr>
+                <td>Asr</td>
+                <td>{{ jamaa_times[3] }}</td>
+            </tr>
+            <tr>
+                <td>Magrib</td>
+                <td>{{ jamaa_times[4] }}</td>
+            </tr>
+            <tr>
+                <td>Isha</td>
+                <td>{{ jamaa_times[5] }}</td>
+            </tr>
+
+        </table>
+        {% else %}
+            <p>No prayer times available for today.</p>
+        {% endif %}
+    </body>
+    <br>
+
+</html>
